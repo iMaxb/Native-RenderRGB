@@ -132,6 +132,7 @@ int main(int argc, char **argv) {
     meta->setInt32(kKeyHeight, 1080);
     meta->setInt32(kKeyColorFormat, OMX_COLOR_Format24bitRGB888);//OMX_TI_COLOR_FormatYUV420PackedSemiPlanar);
 
+    //true 顔色显示正常，false不正常，详情查阅SoftwareRenderer.cpp
     mSoftRenderer = new SoftwareRenderer(gSurface, meta, true);
 
     BitmapInfo * pBitmap = readbmp("/mnt/sdcard/test.bmp");
